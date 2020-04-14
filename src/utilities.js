@@ -5,11 +5,11 @@
 export const getNormalisedDays = (periodType, days) => {
   switch (periodType) {
     case 'weeks':
-    return days * 7;
+      return days * 7;
     case 'months':
-    return days * 30;
+      return days * 30;
     default:
-    return days;
+      return days;
   }
 };
 
@@ -28,10 +28,10 @@ export const getInfectionsByDay = (currentlyInfected, days) => {
 export const getPercentOf = (num, percent) => (num * percent) / 100;
 
 export const getAvailableHospitalBeds = (totalBeds, availability) =>
-getPercentOf(totalBeds, availability);
+  getPercentOf(totalBeds, availability);
 
 export const getDollarsInFlight = (infectionsByRequestedTime, days, region) =>
-(infectionsByRequestedTime *
-  region.avgDailyIncomePopulation *
-  region.avgDailyIncomeInUSD) /
+  (infectionsByRequestedTime *
+    region.avgDailyIncomePopulation *
+    region.avgDailyIncomeInUSD) /
   days;

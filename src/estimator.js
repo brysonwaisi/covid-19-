@@ -34,7 +34,7 @@ const covid19ImpactEstimator = (data) => {
     );
     const hospitalBedsByRequestedTime = Math.trunc(
       getAvailableHospitalBeds(totalHospitalBeds, 35) -
-      severeCasesByRequestedTime
+        severeCasesByRequestedTime
     );
     const casesForICUByRequestedTime = Math.trunc(
       getPercentOf(infectionsByRequestedTime, 5)
