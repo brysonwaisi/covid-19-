@@ -1,4 +1,4 @@
-eslint-disable operator-linebreak */
+/* eslint-disable operator-linebreak */
 import {
   getNormalisedDays,
   getCurrentlyInfected,
